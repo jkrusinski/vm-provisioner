@@ -1,0 +1,30 @@
+{
+  "name": "vm-provisioner",
+  "version": "0.0.1",
+  "description": "Vagrant shell provisioner for spinning up multi-platform server environments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Provisioner",
+    "Shell",
+    "Bash",
+    "Vagrant",
+    "Multi-Platform",
+    "PHP",
+    "Node.js",
+    "NGINX",
+    "Mongoose",
+    "MySQL"
+  ],
+  "author": "Jerry Krusinski (jkrusinski.com)",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}

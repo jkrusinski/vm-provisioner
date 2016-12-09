@@ -1,0 +1,21 @@
+server {
+
+	#make sure that /etc/nginx/nginx.conf has sendfile = off; on the virtual machine
+
+	listen 0.0.0.0:80;
+	server_name jkrusinski.dev;
+	access_log /var/log/nginx/jkrusinski.dev.log;
+
+	root /var/www;
+
+	location /public/ {
+
+		try_files $uri $uri/ =404;
+	}
+
+	location / {
+
+		include /etc/nginx/proxy_params;
+		proxy_pass http://127.0.0.1:3000;
+	}
+}
